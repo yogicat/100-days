@@ -1,0 +1,113 @@
+  html {
+      background-color: #000;
+      background-size:cover;
+      font-family: sans-serif;
+      text-align: center;
+      font-size: 10px;
+    }
+
+    body {
+      margin: 0;
+      font-size: 2rem;
+      display:flex;
+      flex:1;
+      min-height: 100vh;
+      align-items: center;
+    }
+
+    .clock-text {
+      color: white;
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2rem;
+      letter-spacing: 0.5rem;
+    }
+    
+    .clock {
+      width: 30rem;
+      height: 30rem;
+      border-radius:50%;
+      margin: 100px auto;
+      position: relative;
+      padding: 3rem;
+    }
+
+    .clock-light{
+      width: 100%;
+      height: 100%;
+      border-radius:50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      box-shadow: 8px 8px 10px 0px #8e27b0,
+        10px -10px 20px 0px #ff26b2, 
+        -10px 10px 20px 0px #4c2bff;
+      animation-duration: 5s;
+      animation-name: rotation;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    @keyframes rotation {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    
+    .clock-face {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform: translateY(-3px);
+    }
+
+    .hand {
+      width:50%;
+      height:6px;
+      background:transparent;
+      position: absolute;
+      top:50%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+      transition: all 0.05s ease;
+    }
+
+    .second-hand::after {
+      content:"";
+      width: 15px;
+      height: 15px;
+      background-color: #E91E63;
+      border-radius: 15px;
+      position: absolute;
+      left: 0;
+      top: -4px;
+    }
+    
+    .hour-hand::after {
+      content:"";
+      width: 30px;
+      height: 30px;
+      background-color: #ffeb3b;
+      border-radius: 30px;
+      position: absolute;
+      left: 0;
+      top: -15px;
+    }
+
+    .min-hand::after {
+      content:"";
+      width: 80px;
+      height: 20px;
+      background-color: #2196F3;
+      border-radius: 50px;
+      position: absolute;
+      left: 0;
+      top: -10px;
+    }
+
+
