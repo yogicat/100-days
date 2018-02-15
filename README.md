@@ -8,12 +8,24 @@
 No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 
 
+---
+
+
 ## Table Of Contents
+
+2. CSS + Javascript Clock
+
+    [project result](https://yogicat.github.io/JavaScript30/02-clock)
+
+    ![drum kit image](./screenshots/02-clock.gif)
+
 
 1. JavaScript Drum Kit
 
     [project result](https://yogicat.github.io/JavaScript30/01-drumkit)
 
     ![drum kit image](./screenshots/01-drumkit.gif)
+
+
 
 
