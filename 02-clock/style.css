@@ -68,7 +68,7 @@
 
     .hand {
       width:50%;
-      height:6px;
+      height: 1px;
       background:transparent;
       position: absolute;
       top:50%;
@@ -82,10 +82,9 @@
       width: 15px;
       height: 15px;
       background-color: #E91E63;
-      border-radius: 15px;
+      border-radius: 30px;
       position: absolute;
       left: 0;
-      top: -4px;
     }
     
     .hour-hand::after {
