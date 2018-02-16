@@ -4,6 +4,7 @@ var clockInit = (function () {
   var hourHand = document.querySelector('.hour-hand');
   var clockHour = document.querySelector('.clock-hour');
   var clockMin = document.querySelector('.clock-min');
+  var clockLight = document.querySelector('.clock-light');
 
   function setDate() {
     var now = new Date();
@@ -27,6 +28,7 @@ var clockInit = (function () {
   }
 
   setInterval(setDate, 1000);
+  clockLight.classList.add('animate');
   clockMin.innerHTML = new Date().getMinutes();
   clockHour.innerHTML = new Date().getHours();
 }());
