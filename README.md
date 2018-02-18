@@ -19,6 +19,7 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 
     ![drum kit image](./screenshots/03-css.gif)
 
+---
 
 2. CSS + Javascript Clock
 
@@ -26,6 +27,7 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 
     ![drum kit image](./screenshots/02-clock.gif)
 
+---
 
 1. JavaScript Drum Kit
 
