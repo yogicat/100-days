@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>css variables</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <form class = "controls">  
+      <label for="spacing">size </label>
+      <input id="spacing" type="range" name="spacing" min="400" max="2500" value="400" data-sizing="px">
+    
+      <label for="blur">blur </label>
+      <input id="blur" type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
+    
+      <label for="base">color </label>
+      <input id="base" type="color" name="base" value="#2B86C5">
+    </form>
+    <h2>can you see me?</h2>
+    <div class="circle"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
