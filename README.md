@@ -13,6 +13,13 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 
 ## Table Of Contents
 
+3. CSS Variables
+
+    [project result](https://yogicat.github.io/JavaScript30/03-css/)
+
+    ![drum kit image](./screenshots/03-css.gif)
+
+
 2. CSS + Javascript Clock
 
     [project result](https://yogicat.github.io/JavaScript30/02-clock)
