@@ -17,7 +17,7 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 
     [project result](https://yogicat.github.io/JavaScript30/03-css/)
 
-    ![drum kit image](./screenshots/03-css.gif)
+    ![css variable image](./screenshots/03-css.gif)
 
 ---
 
