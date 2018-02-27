@@ -28,6 +28,8 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 
     [project result](https://yogicat.github.io/JavaScript30/06-typeAhead/)
 
+    ![project image](./screenshots/06-typeAhead.png)
+
     외부에서 JSON을 불러와서 사용하는 법과, 자료를 검색하고 표현하는 방법, 정규표현식을 배웠다.
 
 ---
