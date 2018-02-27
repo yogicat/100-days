@@ -1,8 +1,7 @@
 ## JavaScript30 project list
 
 
-프레임워크, 라이브러리 없이 순수 자바스크립트로 만드는 재밌는 프로젝트들 시작
-
+프레임워크, 라이브러리 없이 순수 자바스크립트로 만드는 재밌는 프로젝트들 시작.
 [JavaScript30 challenge](https://javascript30.com/)
 
 No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
@@ -20,7 +19,6 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
     array.some, array.every, array.find, array.splice, array.slice
     
 
-    
 
 ---
 
@@ -30,7 +28,8 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 
     ![project image](./screenshots/06-typeAhead.png)
 
-    외부에서 JSON을 불러와서 사용하는 법과, 자료를 검색하고 표현하는 방법, 정규표현식을 배웠다.
+    [awesome-json-datasets](https://github.com/jdorfman/awesome-json-datasets)에서 원하는 데이터를 fetch로 불러와서 검색하는 간단한 폼을 만들었다. 정규표현식으로 찾는 방법과 입력한 값을 `replace`함수를 통해 highlight하는 방법을 배웠다. `input`에서 `outline`속성과 `:focus`에 대해 알게 되었다.
+
 
 ---
 
@@ -47,6 +46,8 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
     [project result](https://yogicat.github.io/JavaScript30/03-css/)
 
     ![css variable image](./screenshots/03-css.gif)
+    새로 생긴 CSS 변수 기능을 활용해 `input`함께 값이 실시간 변동되는 사이트를 만들었다. 슬라이더 CSS로 선택하고 모양을 바꾸는 법을 공부했다.
+
 
 ---
 
@@ -55,6 +56,7 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
     [project result](https://yogicat.github.io/JavaScript30/02-clock)
 
     ![drum kit image](./screenshots/02-clock.gif)
+    setInterval을 통해 시계를 만들었다. css의 `box-shadow`를 겹겹이 쌓아 재밌는 효과를 만들어보았다.
 
 ---
 
