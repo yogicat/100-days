@@ -1,32 +1,37 @@
 const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
+const bitcoin = 'https://api.coinmarketcap.com/v1/ticker/';
 const cities = [];
-const prom = fetch(endpoint).then(blob => blob.json()).then(data => cities.push(...data));
+const coins = [];
+const prom = fetch(bitcoin).then(blob => blob.json().then(data => coins.push(...data)));
+
 const searchInput = document.querySelector('.search');
 const suggestions = document.querySelector('.suggestions');
 
-function findMatches(wordToMatch, cities) {
-  return cities.filter(place => {
-    //  wordToMatch
+function findMatches(wordToMatch, coins) {
+  return coins.filter(coin => {
+    // const regex = /wordToMatch/gi;
     const regex = new RegExp(wordToMatch, 'gi');
-    return place.city.match(regex) || place.city.match(regex);
-  });
+    return coin.name.match(regex);
+  })
 }
 
-function displayMatch() {
-  const matchArray = findMatches(this.value, cities);
-  const html = matchArray.map(item => {
-    const regex = new RegExp(this.value, 'gi');
-    const cityName = item.city.replace(regex, `<span class="hl">${this.value}</span>`);
-    const stateName = item.state.replace(regex, `<span class="hl">${this.value}</span>`);
+function displayMatches() {
+  const inputValue = this.value ? this.value : '';
+  const matchArr = findMatches(inputValue, coins);
+  const html = matchArr.map((item) => {
+    const regex = new RegExp(inputValue, 'gi');
+    const coinName = item.name.replace(regex, `<span class="hl">${inputValue}</span>`);
     return `
       <li>
-      <span class="name">${cityName}, ${stateName}</span>
-      <span class="population">${item.population}</span>
+        <span class="name">${coinName}</span>
+        <span class="symbol">${item.symbol}</span>
+        <span class="population">${(1 * item.price_usd).toFixed(3)}</span>
       </li>
-  `
+    `;
   }).join('');
   suggestions.innerHTML = html;
 }
 
-searchInput.addEventListener('change', displayMatch);
-searchInput.addEventListener('keyup', displayMatch);
+searchInput.addEventListener('change', displayMatches);
+searchInput.addEventListener('keyup', displayMatches);
+window.addEventListener('load', displayMatches);
