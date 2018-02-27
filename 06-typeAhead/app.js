@@ -8,11 +8,10 @@ const searchInput = document.querySelector('.search');
 const suggestions = document.querySelector('.suggestions');
 
 function findMatches(wordToMatch, coins) {
-  return coins.filter(coin => {
-    // const regex = /wordToMatch/gi;
+  return coins.filter((coin) => {
     const regex = new RegExp(wordToMatch, 'gi');
     return coin.name.match(regex);
-  })
+  });
 }
 
 function displayMatches() {
