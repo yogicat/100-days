@@ -2,15 +2,43 @@
 
 
 프레임워크, 라이브러리 없이 순수 자바스크립트로 만드는 재밌는 프로젝트들 시작.
+
 [JavaScript30 challenge](https://javascript30.com/)
 
 No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 
+---
+
+**진행상황**
+
+8 / 30(18.03.24)
 
 ---
 
 
 ## Table Of Contents
+
+16. Mouse shadow
+
+    [project result](https://yogicat.github.io/JavaScript30/16-mouse-shadow/)
+
+     ![project image](./screenshots/16-mouse-shadow.gif)
+
+    js를 통해 textShadow의 값을 동적으로 주는법을 배웠다.
+    html에서 `contenteditable` attribute를 주면 input처럼 사용자가 수정할 수 있는 요소가 된다.
+
+    원하는 요소에 mousemove이벤트를 주었을때 `event.offsetX`, `event.offsetY`로 마우스의 위치를 알 수 있다. 이때 요소에 속한 자식요소가 이벤트 delegation을 통해 호출할 경우 offsetX, offsetY위치가 변하는 현상이 발생하고, 이때 this(이벤트를 지정한 요소)와 e.target이 다른 경우를 감지해 x,y값을 재정의 한다. 
+
+    ```js
+    let { offsetX: x, offsetY: y } = e;
+    if (this !== e.target) {
+        x = x + e.target.offsetLeft;
+        y = y + e.target.offsetTop;
+    }
+    ```
+
+---
+
 
 
 5. Flex panel
