@@ -12,6 +12,20 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 
 ## Table Of Contents
 
+
+5. Flex panel
+
+    [project result](https://yogicat.github.io/JavaScript30/05-flex-panel/)
+
+     ![project image](./screenshots/05-flex-min.gif)
+
+    flex의 다양한 사용법을 익혔다. `flex: <grow> <shrink> <basis>`를 적용해 눌렀을때 확장되는 효과를 주었다.
+    `transitionend`이벤트와 `e.propertyName`으로 어떤 css트랜지션 효과가 발생했는지 확일 할 수 있었다.
+    
+
+---
+
+
 7. Array Cardio 2
 
     [project result](https://yogicat.github.io/JavaScript30/07-array2/)
